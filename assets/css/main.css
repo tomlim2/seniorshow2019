@@ -5,6 +5,7 @@ body{
   font-family: 'Nanum Gothic', sans-serif;
   font-weight: 700;
   text-rendering: optimizeLegibility;
+  overflow-y: hidden;
 }
 .info-container{
   font-size: 2em;
