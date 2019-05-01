@@ -5,11 +5,11 @@ $(document).ready(function(){
     return colors[randomColors];
   };
 
-  for (var i = 0; i < 22; i++) {
+  for (var i = 0; i < 30; i++) {
     var randomRotate = Math.random()*180;
 
-    var randomLeft = Math.random()*1100;
-    var randomTop = Math.random()*600;
+    var randomLeft = Math.random()*(window.innerWidth-160);
+    var randomTop = Math.random()*(window.innerHeight-60);
     var drawing = $('<div class="drawing"></div>').css({
         background: getRandomColors(),
         overflow: 'hidden',
