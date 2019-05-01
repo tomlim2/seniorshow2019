@@ -23,25 +23,13 @@ $(document).ready(function(){
     drawing.appendTo("#elements-container");
   }
 
-  // for (var i = 0; i < unitsWide * unitsTall; i++) {
-  //     var randomColor;
-  //     randomColor = Math.random() * 0x1000000; // 0 < randomColor < 0x1000000
-      // randomColor = Math.floor(randomColor); // 0 < randomColor <= 0xFFFFFF
-  //     randomColor = randomColor.toString(16); // hex representation randomColor
-      // randomColor = ("000000" + randomColor).slice(-6); // leading zeros added
-  //     randomColor = "#" + randomColor; // # added
-  //     $('<span class="square"></span>').css({
-  //         display: 'block',
-  //         float: 'left',
-  //         width: unitSize,
-  //         height: unitSize,
-  //         'background-color': randomColor
-  //     }).appendTo(drawing);
-  // }
-  // drawing.appendTo($(".container"));
-
   $(".designers-title").click(function(){
     $( ".designers" ).toggleClass('designers-on');
+    $( ".title" ).toggleClass('title-designers-on');
+  });
+  $(".title-title").click(function(){
+    $( ".title" ).toggleClass('title-on');
+    $( ".designers" ).toggleClass('designers-title-on');
   });
   $(".drawing").draggable(function(){
   });

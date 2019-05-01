@@ -1,3 +1,10 @@
+.screen-size{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -14,10 +21,32 @@ body{
   text-align: center;
 }
 .title{
-  width: 600px;
+  width: 80vw;
   left: 50%;
   top: 10px;
-  margin-left: -300px;
+  margin-left: -40vw;
+  transition: top 400ms;
+}
+.title-body{
+  position: absolute;
+  top: calc(-80vh - 10px);
+  width: 80vw;
+  height: 80vh;
+  background-color: white;
+  color: black;
+}
+.title-on{
+  top: 92vh;
+}
+.title-designers-on{
+  top: -40px;
+}
+.title-text{
+  padding: 6vh;
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 1.4em;
+  text-align: left;
 }
 .designers{
   width: 80vw;
@@ -25,12 +54,16 @@ body{
   top: 92vh;
   margin-left: -40vw;
   transition: top 400ms;
-  cursor: pointer;
 }
 .designers-on{
-  top: 60px;
+  top: 10px;
 }
-.designers-title{}
+.designers-title-on{
+  top: 104vh;
+}
+.designers-title, .title-title{
+  cursor: pointer;
+}
 .designers-body{
   background-color: white;
   color: black;
@@ -38,6 +71,16 @@ body{
   overflow: scroll;
   padding: 6vh;
   margin-top: 20px;
+
+}
+.designers-text{
+  font-size: 20px;
+  line-height: 1.4em;
+  text-align: left;
+}
+.title-text{
+  font-size: 20px;
+  line-height: 1.4em;
   text-align: left;
 }
 .sidebar{
@@ -76,12 +119,13 @@ body{
   left: 0;
   background-image: url('../img/backgroundImage2.svg');
   z-index: 10;
-  opacity: 0.8;
+  opacity: 0.1;
   pointer-events: none;
 }
 .profile-container{
   padding: 1em;
   padding-top: 2em;
+  padding-bottom: 8em;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-auto-rows: auto;
