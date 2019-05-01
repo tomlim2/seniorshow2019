@@ -1,0 +1,88 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: white;
+  font-family: 'Covik Sans', sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  overflow-y: hidden;
+}
+.info-container{
+  font-size: 2em;
+
+}
+.info{
+  position: absolute;
+  text-align: center;
+}
+.title{
+  width: 600px;
+  left: 50%;
+  top: 10px;
+  margin-left: -300px;
+}
+.designers{
+  width: 80vw;
+  left: 50%;
+  top: 92vh;
+  margin-left: -40vw;
+  transition: top 400ms;
+  cursor: pointer;
+}
+.designers-on{
+  top: 60px;
+}
+.designers-title{}
+.designers-body{
+  background-color: white;
+  color: black;
+  height: 100vh;
+  overflow: scroll;
+  padding: 6vh;
+  margin-top: 20px;
+  text-align: left;
+}
+.sidebar{
+  vertical-align: top;
+}
+.sidebar-left{
+  transform: rotate(180deg);
+}
+.sidebar-right{
+
+}
+.where{
+  right: 10px;
+  bottom: 0px;
+  width: 40px;
+  height: 100vh;
+  writing-mode: vertical-rl;
+}
+.when{
+  right: 10px;
+  width: 40px;
+  height: 100vh;
+  writing-mode: vertical-rl;
+}
+.container{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url('../img/backgroundImage.svg');
+}
+.profile-container{
+  padding: 1em;
+  padding-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: auto;
+  grid-gap: 0.4em;
+}
+.profile-item{
+  background-color: red;
+  height: 250px;
+}
