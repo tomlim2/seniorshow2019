@@ -18,7 +18,8 @@ $(document).ready(function(){
         position: 'absolute',
         left: randomLeft,
         top: randomTop,
-        transform: 'rotate(' + randomRotate + 'deg)'
+        transform: 'rotate(' + randomRotate + 'deg)',
+
     });
     drawing.appendTo("#elements-container");
   }
