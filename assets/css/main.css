@@ -71,6 +71,14 @@ body{
   background-position: 50% 50%;
   background-image: url('../img/backgroundImage.svg');
 }
+.container2{
+  top: 0;
+  left: 0;
+  background-image: url('../img/backgroundImage2.svg');
+  z-index: 10;
+  opacity: 0.8;
+  pointer-events: none;
+}
 .profile-container{
   padding: 1em;
   padding-top: 2em;
