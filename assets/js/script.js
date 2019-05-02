@@ -6,7 +6,7 @@ $(document).ready(function(){
   };
 
   for (var i = 0; i < 30; i++) {
-    var randomRotate = Math.random()*180;
+    var randomRotate = Math.random()*360;
 
     var randomLeft = Math.random()*(window.innerWidth-160);
     var randomTop = Math.random()*(window.innerHeight-60);

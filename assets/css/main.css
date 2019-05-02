@@ -138,4 +138,9 @@ body{
 }
 .drawing{
   border-radius: 6px;
+  cursor: grab;
+  transition: 100ms all;
+}
+.drawing:active{
+  cursor: grabbing;
 }
