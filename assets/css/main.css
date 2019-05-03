@@ -64,6 +64,10 @@ body{
 }
 .designers-title, .title-title{
   cursor: pointer;
+  transition: transform 200ms;
+}
+.designers-title:hover, .title-title:hover{
+  text-decoration: underline;
 }
 .designers-body{
   background-color: white;
