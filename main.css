@@ -6,11 +6,9 @@ body{
   font-family: 'Covik Sans', sans-serif;
   font-weight: 400;
   text-rendering: optimizeLegibility;
-
 }
 .info-container{
   font-size: 2em;
-
 }
 .info{
   position: absolute;

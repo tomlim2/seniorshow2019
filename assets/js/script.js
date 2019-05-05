@@ -19,18 +19,25 @@ $(document).ready(function(){
         left: randomLeft,
         top: randomTop,
         transform: 'rotate(' + randomRotate + 'deg)',
-
     });
     drawing.appendTo("#elements-container");
   }
 
-  $(".designers-title").click(function(){
-    $( ".designers" ).toggleClass('designers-on');
-    $( ".title" ).toggleClass('title-designers-on');
+  $(".title-center-close, .designers-center-close, .close-trigger, .clicked").click(function(){
+    $( "#seniorshow, #designers" ).removeClass("clicked");
+    $( ".designers-center-close,.title-center-close,.close-trigger, .designers-body, .title-body, .center-container" ).css({"display":"none"});
   });
-  $(".title-title").click(function(){
-    $( ".title" ).toggleClass('title-on');
-    $( ".designers" ).toggleClass('designers-title-on');
+  $("#designers").click(function(){
+    $( this ).addClass("clicked");
+    $( "#seniorshow" ).removeClass("clicked");
+    $( ".designers-center-close,.close-trigger, .center-container, .designers-body,.trigger-center-close" ).css({"display":"block"});
+    $( ".title-center-close,.title-body" ).css({"display":"none"});
+  });
+  $("#seniorshow").click(function(){
+    $( this ).addClass("clicked");
+    $( "#designers" ).removeClass("clicked");
+    $( ".title-center-close,.close-trigger, .title-body, .center-container" ).css({"display":"block"});
+    $( ".designers-center-close,.designers-body" ).css({"display":"none"});
   });
   $(".drawing").draggable(function(){
   });
