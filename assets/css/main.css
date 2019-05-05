@@ -205,4 +205,13 @@ body{
     top: 94px;
     display: none;
   }
+  .drawing{
+    transition: 0ms all;
+  }
+  .prfl-item-hover{
+    transition: all 0ms;
+  }
+  .profile-item:hover .prfl-item-hover{
+    opacity: 0;
+  }
 }
