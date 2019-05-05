@@ -3,7 +3,7 @@ body{
   padding: 0;
   height: 100vh;
   color: white;
-  font-family: 'Covik Sans', sans-serif;
+  font-family: 'covik-sans', sans-serif;
   font-weight: 400;
   text-rendering: optimizeLegibility;
 }
