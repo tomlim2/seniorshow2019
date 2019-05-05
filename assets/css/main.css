@@ -5,13 +5,21 @@
   overflow: hidden;
 }
 
+.main-img{
+  position: absolute;
+  top: 50%;
+  margin-top: -28vw;
+}
+
 body{
   margin: 0;
   padding: 0;
   color: white;
-  font-family: 'Nanum Gothic', sans-serif;
-  font-weight: 700;
+  font-family: covik-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   text-rendering: optimizeLegibility;
+  background: black;
 }
 .close-trigger{
   position: absolute;
@@ -22,9 +30,9 @@ body{
   cursor: pointer;
 }
 .center-container{
+  background-color: white;
   width: 80vw;
   height: 78vh;
-  background-color: red;
   position: absolute;
   overflow: scroll;
   border-radius: 10px;
@@ -38,6 +46,7 @@ body{
 .info{
   position: absolute;
   text-align: center;
+  font-weight: 600;
 }
 .title{
   width: 302px;
@@ -47,7 +56,7 @@ body{
 }
 .title-body{
   width: 80vw;
-  height: 78vh;
+
   background-color: white;
   color: black;
   display: none;
@@ -91,6 +100,7 @@ body{
 }
 .title-title{
   position: relative;
+  line-height: 1.1em;
 }
 
 .title-center-close{
@@ -116,6 +126,7 @@ body{
 
 .sidebar{
   vertical-align: top;
+  font-size: 1em;
 }
 .sidebar-left{
   transform: rotate(180deg);
@@ -129,29 +140,19 @@ body{
   width: 40px;
   height: 100vh;
   writing-mode: vertical-rl;
+  opacity: 0.6;
 }
 .when{
   right: 10px;
   width: 40px;
   height: 100vh;
   writing-mode: vertical-rl;
+  opacity: 0.6;
 }
 .container{
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-image: url('../img/backgroundImage.svg');
-}
-.container2{
-  top: 0;
-  left: 0;
-  background-image: url('../img/backgroundImage2.svg');
-  z-index: 10;
-  opacity: 0.5;
-  pointer-events: none;
 }
 .profile-container{
   padding: 1em;
@@ -169,4 +170,9 @@ body{
 }
 .drawing:active{
   cursor: grabbing;
+}
+@media only screen and (max-width: 768px) {
+  .sidebar{
+    /* font-size: 0.8em; */
+  }
 }

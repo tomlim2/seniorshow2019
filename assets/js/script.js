@@ -4,8 +4,12 @@ $(document).ready(function(){
     var randomColors = Math.floor(Math.random() * 22);
     return colors[randomColors];
   };
-
-  for (var i = 0; i < 30; i++) {
+  if (window.innerWidth<768) {
+    var picNumbers = 10;
+  } else {
+    var picNumbers = 30;
+  }
+  for (var i = 0; i < picNumbers; i++) {
     var randomRotate = Math.random()*360;
 
     var randomLeft = Math.random()*(window.innerWidth-160);
