@@ -172,8 +172,8 @@ body{
 }
 @media only screen and (max-width: 768px) {
   .screen-size{
-    top: 20vh;
-    height: 60vh;
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
   }
   .sidebar{
     font-size: 0.8em;
@@ -182,21 +182,26 @@ body{
     grid-template-columns: repeat(1,1fr);
   }
   .where{
-    height: 60vh;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   .when{
-    height: 60vh;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   .container{
     position: absolute;
     width: 100vw;
-    height: 60vh;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   .designers{
-    top: 52vh;
+    top: 92vh;
+    top: calc(var(--vh, 1vh) * 92);
   }
   .center-container{
-    height: 38vh;
+    height: 78vh;
+    height: calc(var(--vh, 1vh) * 78);
     top: 94px;
     display: none;
   }
