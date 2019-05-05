@@ -172,8 +172,8 @@ body{
 }
 @media only screen and (max-width: 768px) {
   .screen-size{
-    top: 10vh;
-    height: 80vh;
+    top: 20vh;
+    height: 60vh;
   }
   .sidebar{
     font-size: 0.8em;
@@ -182,30 +182,21 @@ body{
     grid-template-columns: repeat(1,1fr);
   }
   .where{
-    right: 10px;
-    bottom: 0px;
-    width: 40px;
-    height: 80vh;
-    writing-mode: vertical-rl;
-    opacity: 0.6;
+    height: 60vh;
   }
   .when{
-    right: 10px;
-    width: 40px;
-    height: 80vh;
-    writing-mode: vertical-rl;
-    opacity: 0.6;
+    height: 60vh;
   }
   .container{
     position: absolute;
     width: 100vw;
-    height: 80vh;
+    height: 60vh;
   }
   .designers{
-    top: 72vh;
+    top: 52vh;
   }
   .center-container{
-    height: 58vh;
+    height: 38vh;
     top: 94px;
     display: none;
   }
