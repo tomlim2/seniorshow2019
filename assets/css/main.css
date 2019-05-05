@@ -56,7 +56,6 @@ body{
 }
 .title-body{
   width: 80vw;
-
   background-color: white;
   color: black;
   display: none;
@@ -69,7 +68,7 @@ body{
 }
 .designers{
   width: 143.5px;
-  left: 50%;
+  left: 50vw;
   top: 92vh;
   margin-left: -71.75px;
 }
@@ -172,10 +171,42 @@ body{
   cursor: grabbing;
 }
 @media only screen and (max-width: 768px) {
+  .screen-size{
+    top: 10vh;
+    height: 80vh;
+  }
   .sidebar{
-    /* font-size: 0.8em; */
+    font-size: 0.8em;
   }
   .profile-container{
     grid-template-columns: repeat(1,1fr);
+  }
+  .where{
+    right: 10px;
+    bottom: 0px;
+    width: 40px;
+    height: 80vh;
+    writing-mode: vertical-rl;
+    opacity: 0.6;
+  }
+  .when{
+    right: 10px;
+    width: 40px;
+    height: 80vh;
+    writing-mode: vertical-rl;
+    opacity: 0.6;
+  }
+  .container{
+    position: absolute;
+    width: 100vw;
+    height: 80vh;
+  }
+  .designers{
+    top: 72vh;
+  }
+  .center-container{
+    height: 58vh;
+    top: 94px;
+    display: none;
   }
 }
