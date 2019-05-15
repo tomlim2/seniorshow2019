@@ -18,13 +18,13 @@ $(document).ready(function(){
     			"Pattern40","Pattern41","Pattern42","Pattern43","Pattern44","Pattern45","Pattern46","Pattern47","Pattern48",
     			"Pattern49","Pattern50","Pattern51","Pattern52","Pattern53","Pattern54","Pattern55","Pattern56","Pattern57","Pattern58",
     			"Pattern59","Pattern60","Pattern61","Pattern62","Pattern63","Pattern64"];
-    var randomPNG = Math.floor(Math.random() * 64);	
+    var randomPNG = Math.floor(Math.random() * 64);
     return pngBase + pngs[randomPNG] + ".png";
   };
   if (window.innerWidth<768) {
-    var picNumbers = 10;
+    var picNumbers = 11;
   } else {
-    var picNumbers = 30;
+    var picNumbers = 32;
   }
   for (var i = 0; i < picNumbers; i++) {
     var randomRotate = Math.random()*360;
@@ -35,7 +35,7 @@ $(document).ready(function(){
         // background: getRandomColors(),
         backgroundImage: 'url(' + getRandomPNG() + ')',
         overflow: 'hidden',
-        width: '180px',
+        width: '210px',
         height:'60px',
         position: 'absolute',
         left: randomLeft,

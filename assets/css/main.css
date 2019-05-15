@@ -88,6 +88,7 @@ body{
   margin-left: -71.75px;
 }
 #seniorshow, #designers{
+  filter: drop-shadow(4px 4px 0px rgba(0,0,0,.8));
   cursor: pointer;
 }
 #seniorshow:hover, #designers:hover{
@@ -233,5 +234,22 @@ body{
   }
   .profile-item:hover .prfl-item-hover{
     opacity: 0;
+  }
+}
+@media only screen and (min-width: 1290px) {
+  .screen-size{
+  }
+  .info-container{
+    font-size: 2.2em;
+  }
+  .title {
+    width: 422px;
+    margin-left: -211px;
+  }
+  .designers {
+    width: 230px;
+    left: 50vw;
+    top: 92vh;
+    margin-left: -125px;
   }
 }
