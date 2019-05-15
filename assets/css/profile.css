@@ -61,12 +61,15 @@ a{
   padding-bottom: 10px;
   background-color: black;
   border-radius: 5px;
-
+  transition: 200ms transform;
+  transform-origin: 50% 50%;
 }
+
 .profile-item:hover .prfl-item-hover{
   opacity: 1;
 }
-.profile-item:hover .prfl-item-nrm{
+.profile-item:hover .prfl-item-name{
+  transform: rotate(4deg);
 }
 
 .item1 .prfl-item-nrm{
@@ -75,11 +78,18 @@ a{
 .item1 .prfl-item-hover{
   background-image: url('../img/profile/Alexis-1.gif');
 }
+.item1 .prfl-item-name{
+  background-color: #ffc738;
+}
 .item2 .prfl-item-nrm{
   background-image: url('../img/profile/Alex-1.jpg');
 }
 .item2 .prfl-item-hover{
   background-image: url('../img/profile/Alex-1.gif');
+}
+.item2 .prfl-item-name{
+  background-color: #cae9ea;
+  color: #616f71;
 }
 .item3 .prfl-item-nrm{
   background-image: url('../img/profile/Amy-1.jpg');
@@ -87,154 +97,196 @@ a{
 .item3 .prfl-item-hover{
   background-image: url('../img/profile/Amy-1.gif');
 }
+.item3 .prfl-item-name{
+  background-color: #9e86be;
+}
 .item4 .prfl-item-nrm{
   background-image: url('../img/profile/cooper-1.jpg');
 }
-
 .item4 .prfl-item-hover{
   background-image: url('../img/profile/cooper-1.gif');
+}
+.item4 .prfl-item-name{
+  background-color: #0cb0d9;
 }
 
 .item5 .prfl-item-nrm{
   background-image: url('../img/profile/denise-1.jpg');
 }
-
 .item5 .prfl-item-hover{
   background-image: url('../img/profile/denise-1.gif');
+}
+.item5 .prfl-item-name{
+  background-color: #f04e36;
 }
 
 .item6 .prfl-item-nrm{
   background-image: url('../img/profile/edgar-1.jpg');
 }
-
 .item6 .prfl-item-hover{
   background-image: url('../img/profile/edgar-1.gif');
+}
+.item6 .prfl-item-name{
+  background-color: #53c6f0;
 }
 
 .item7 .prfl-item-nrm{
   background-image: url('../img/profile/elvin-1.jpg');
 }
-
 .item7 .prfl-item-hover{
   background-image: url('../img/profile/elvin-1.gif');
+}
+.item7 .prfl-item-name{
+  background-color: #232021;
 }
 
 .item8 .prfl-item-nrm{
   background-image: url('../img/profile/grace-1.jpg');
 }
-
 .item8 .prfl-item-hover{
   background-image: url('../img/profile/grace-1.png');
+}
+.item8 .prfl-item-name{
+  background-color: #ef3842;
 }
 
 .item9 .prfl-item-nrm{
   background-image: url('../img/profile/ian-1.jpg');
 }
-
 .item9 .prfl-item-hover{
   background-image: url('../img/profile/ian-1.gif');
+}
+.item9 .prfl-item-name{
+  background-color: #8cc63f;
 }
 
 .item10 .prfl-item-nrm{
   background-image: url('../img/profile/ivan-1.jpg');
 }
-
 .item10 .prfl-item-hover{
   background-image: url('../img/profile/ivan-1.gif');
+}
+.item10 .prfl-item-name{
+  background-color: #516830;
 }
 
 .item11 .prfl-item-nrm{
   background-image: url('../img/profile/jacqueline-1.jpg');
 }
-
 .item11 .prfl-item-hover{
   background-image: url('../img/profile/jacqueline-1.gif');
+}
+.item11 .prfl-item-name{
+  background-color: #f0525a;
 }
 
 .item12 .prfl-item-nrm{
   background-image: url('../img/profile/janice-1.jpg');
 }
-
 .item12 .prfl-item-hover{
   background-image: url('../img/profile/janice-1.gif');
+}
+.item12 .prfl-item-name{
+  background-color: #b8d432;
 }
 
 .item13 .prfl-item-nrm{
   background-image: url('../img/profile/julie-1.jpg');
 }
-
 .item13 .prfl-item-hover{
   background-image: url('../img/profile/julie-1.gif');
+}
+.item13 .prfl-item-name{
+  background-color: #fff100;
+  color: #616f71;
 }
 
 .item14 .prfl-item-nrm{
   background-image: url('../img/profile/mark-1.jpg');
 }
-
 .item14 .prfl-item-hover{
   background-image: url('../img/profile/mark-1.gif');
+}
+.item14 .prfl-item-name{
+  background-color: #ffd400;
 }
 
 .item15 .prfl-item-nrm{
   background-image: url('../img/profile/michael-1.jpg');
 }
-
 .item15 .prfl-item-hover{
   background-image: url('../img/profile/michael-1.gif');
+}
+.item15 .prfl-item-name{
+  background-color: #9bd5be;
 }
 
 .item16 .prfl-item-nrm{
   background-image: url('../img/profile/rebecca-1.jpg');
 }
-
 .item16 .prfl-item-hover{
   background-image: url('../img/profile/rebecca-1.gif');
+}
+.item16 .prfl-item-name{
+  background-color: #000000;
 }
 
 .item17 .prfl-item-nrm{
   background-image: url('../img/profile/sally-1.jpg');
 }
-
 .item17 .prfl-item-hover{
   background-image: url('../img/profile/sally-1.gif');
+}
+.item17 .prfl-item-name{
+  background-color: #df4c9b;
 }
 
 .item18 .prfl-item-nrm{
   background-image: url('../img/profile/shruti-1.jpg');
 }
-
 .item18 .prfl-item-hover{
   background-image: url('../img/profile/shruti-2.jpg');
+}
+.item18 .prfl-item-name{
+  background-color: #fbab20;
 }
 
 .item19 .prfl-item-nrm{
   background-image: url('../img/profile/sophia-1.jpg');
 }
-
 .item19 .prfl-item-hover{
   background-image: url('../img/profile/sophia-1.gif');
+}
+.item19 .prfl-item-name{
+  background-color: #6d1111;
 }
 
 .item20 .prfl-item-nrm{
   background-image: url('../img/profile/tom-1.jpg');
 }
-
 .item20 .prfl-item-hover{
   background-image: url('../img/profile/tom-1.gif');
+}
+.item20 .prfl-item-name{
+  background-color: #184a46;
 }
 
 .item21 .prfl-item-nrm{
   background-image: url('../img/profile/triet-1.jpg');
 }
-
 .item21 .prfl-item-hover{
   background-image: url('../img/profile/triet-1.gif');
+}
+.item21 .prfl-item-name{
+  background-color: #d6d82a;
 }
 
 .item22 .prfl-item-nrm{
   background-image: url('../img/profile/zoey-1.jpg');
 }
-
 .item22 .prfl-item-hover{
   background-image: url('../img/profile/zoey-1.gif');
+}
+.item22 .prfl-item-name{
+  background-color: #ec174f;
 }
