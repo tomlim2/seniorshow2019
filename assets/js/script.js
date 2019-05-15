@@ -9,6 +9,12 @@ $(document).ready(function(){
     var randomColors = Math.floor(Math.random() * 22);
     return colors[randomColors];
   };
+  var getRandomPNG = function(){
+    var pngBase = "assets/img/pics/"
+    var pngs = ["Pattern11","Pattern12"];
+    var randomPNG = Math.floor(Math.random() * 3);
+    return pngBase + pngs[randomPNG] + ".png";
+  };
   if (window.innerWidth<768) {
     var picNumbers = 10;
   } else {
@@ -16,13 +22,14 @@ $(document).ready(function(){
   }
   for (var i = 0; i < picNumbers; i++) {
     var randomRotate = Math.random()*360;
-
     var randomLeft = Math.random()*(window.innerWidth-160);
     var randomTop = Math.random()*(window.innerHeight-60);
+    // var getRandomPNG = "assets/img/pics/Pattern11.png"
     var drawing = $('<div class="drawing"></div>').css({
-        background: getRandomColors(),
+        // background: getRandomColors(),
+        backgroundImage: 'url(' + getRandomPNG() + ')',
         overflow: 'hidden',
-        width: '160px',
+        width: '180px',
         height:'60px',
         position: 'absolute',
         left: randomLeft,

@@ -71,6 +71,10 @@ body{
   line-height: 1.4em;
   text-align: left;
 }
+.instagram a{
+  color: #000000;
+  cursor:pointer;
+}
 .title-img img{
   border-radius: 10px;
   display: inline-block;
@@ -178,6 +182,9 @@ body{
   cursor: grab;
   transition: 100ms all;
   transform-origin: 50% 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .drawing:active{
   cursor: grabbing;
