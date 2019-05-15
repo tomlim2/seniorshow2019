@@ -13,9 +13,6 @@
 
 body{
   margin: 0;
-
-
-
   padding: 0;
   color: white;
   font-family: 'covik-sans', sans-serif;
@@ -88,7 +85,7 @@ body{
   margin-left: -71.75px;
 }
 #seniorshow, #designers{
-  filter: drop-shadow(4px 4px 0px rgba(0,0,0,.8));
+  filter: drop-shadow(.1em .1em 0em rgba(0,0,0,.8));
   cursor: pointer;
 }
 #seniorshow:hover, #designers:hover{
@@ -247,9 +244,7 @@ body{
     margin-left: -211px;
   }
   .designers {
-    width: 230px;
-    left: 50vw;
-    top: 92vh;
-    margin-left: -125px;
+    width: 160px;
+    margin-left: -80px;
   }
 }
