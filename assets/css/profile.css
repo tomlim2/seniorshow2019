@@ -4,6 +4,7 @@
 }
 
 a{
+  cursor: pointer;
   text-decoration: none;
   color: white;
 }
@@ -24,6 +25,10 @@ a{
   text-align: left;
   color: white;
   letter-spacing: -0.1em;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat:no-repeat;
 }
 .prfl-item-hover{
   position: absolute;
@@ -36,14 +41,199 @@ a{
   opacity: 0;
   transition: all 300ms;
   letter-spacing: -0.1em;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat:no-repeat;
 }
 .prfl-item-hover-nm{
   text-align: right;
   position: absolute;
   bottom: 0;
 }
+.prfl-item-name{
+  position: absolute;
+  bottom: 10px;
+  width: 90%;
+  left: 50%;
+  margin-left: -45%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: black;
+  border-radius: 5px
+}
 .profile-item:hover .prfl-item-hover{
   opacity: 1;
 }
 .profile-item:hover .prfl-item-nrm{
+}
+
+.item1 .prfl-item-nrm{
+  background-image: url('../img/profile/Alexis-1.jpg');
+}
+.item1 .prfl-item-hover{
+  background-image: url('../img/profile/Alexis-1.gif');
+}
+.item2 .prfl-item-nrm{
+  background-image: url('../img/profile/Alex-1.jpg');
+}
+.item2 .prfl-item-hover{
+  background-image: url('../img/profile/Alex-1.gif');
+}
+.item3 .prfl-item-nrm{
+  background-image: url('../img/profile/Amy-1.jpg');
+}
+.item3 .prfl-item-hover{
+  background-image: url('../img/profile/Amy-1.gif');
+}
+.item4 .prfl-item-nrm{
+  background-image: url('../img/profile/cooper-1.jpg');
+}
+
+.item4 .prfl-item-hover{
+  background-image: url('../img/profile/cooper-1.gif');
+}
+
+.item5 .prfl-item-nrm{
+  background-image: url('../img/profile/denise-1.jpg');
+}
+
+.item5 .prfl-item-hover{
+  background-image: url('../img/profile/denise-1.gif');
+}
+
+.item6 .prfl-item-nrm{
+  background-image: url('../img/profile/edgar-1.jpg');
+}
+
+.item6 .prfl-item-hover{
+  background-image: url('../img/profile/edgar-1.gif');
+}
+
+.item7 .prfl-item-nrm{
+  background-image: url('../img/profile/elvin-1.jpg');
+}
+
+.item7 .prfl-item-hover{
+  background-image: url('../img/profile/elvin-1.gif');
+}
+
+.item8 .prfl-item-nrm{
+  background-image: url('../img/profile/grace-1.jpg');
+}
+
+.item8 .prfl-item-hover{
+  background-image: url('../img/profile/grace-1.png');
+}
+
+.item9 .prfl-item-nrm{
+  background-image: url('../img/profile/ian-1.jpg');
+}
+
+.item9 .prfl-item-hover{
+  background-image: url('../img/profile/ian-1.gif');
+}
+
+.item10 .prfl-item-nrm{
+  background-image: url('../img/profile/ivan-1.jpg');
+}
+
+.item10 .prfl-item-hover{
+  background-image: url('../img/profile/ivan-1.gif');
+}
+
+.item11 .prfl-item-nrm{
+  background-image: url('../img/profile/jacqueline-1.jpg');
+}
+
+.item11 .prfl-item-hover{
+  background-image: url('../img/profile/jacqueline-1.gif');
+}
+
+.item12 .prfl-item-nrm{
+  background-image: url('../img/profile/janice-1.jpg');
+}
+
+.item12 .prfl-item-hover{
+  background-image: url('../img/profile/janice-1.gif');
+}
+
+.item13 .prfl-item-nrm{
+  background-image: url('../img/profile/julie-1.jpg');
+}
+
+.item13 .prfl-item-hover{
+  background-image: url('../img/profile/julie-1.gif');
+}
+
+.item14 .prfl-item-nrm{
+  background-image: url('../img/profile/mark-1.jpg');
+}
+
+.item14 .prfl-item-hover{
+  background-image: url('../img/profile/mark-1.gif');
+}
+
+.item15 .prfl-item-nrm{
+  background-image: url('../img/profile/michael-1.jpg');
+}
+
+.item15 .prfl-item-hover{
+  background-image: url('../img/profile/michael-1.gif');
+}
+
+.item16 .prfl-item-nrm{
+  background-image: url('../img/profile/rebecca-1.jpg');
+}
+
+.item16 .prfl-item-hover{
+  background-image: url('../img/profile/rebecca-1.gif');
+}
+
+.item17 .prfl-item-nrm{
+  background-image: url('../img/profile/sally-1.jpg');
+}
+
+.item17 .prfl-item-hover{
+  background-image: url('../img/profile/sally-1.gif');
+}
+
+.item18 .prfl-item-nrm{
+  background-image: url('../img/profile/shruti-1.jpg');
+}
+
+.item18 .prfl-item-hover{
+  background-image: url('../img/profile/shruti-2.jpg');
+}
+
+.item19 .prfl-item-nrm{
+  background-image: url('../img/profile/sophia-1.jpg');
+}
+
+.item19 .prfl-item-hover{
+  background-image: url('../img/profile/sophia-1.gif');
+}
+
+.item20 .prfl-item-nrm{
+  background-image: url('../img/profile/tom-1.jpg');
+}
+
+.item20 .prfl-item-hover{
+  background-image: url('../img/profile/tom-1.gif');
+}
+
+.item21 .prfl-item-nrm{
+  background-image: url('../img/profile/triet-1.jpg');
+}
+
+.item21 .prfl-item-hover{
+  background-image: url('../img/profile/triet-1.gif');
+}
+
+.item22 .prfl-item-nrm{
+  background-image: url('../img/profile/zoey-1.jpg');
+}
+
+.item22 .prfl-item-hover{
+  background-image: url('../img/profile/zoey-1.gif');
 }

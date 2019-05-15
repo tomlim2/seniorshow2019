@@ -13,6 +13,9 @@
 
 body{
   margin: 0;
+
+
+
   padding: 0;
   color: white;
   font-family: 'covik-sans', sans-serif;
@@ -59,12 +62,20 @@ body{
   background-color: white;
   color: black;
   display: none;
+  text-align: center;
 }
 .title-text{
   padding: 10vh;
+  padding-top: 1vh;
   font-size: 20px;
   line-height: 1.4em;
   text-align: left;
+}
+.title-img img{
+  border-radius: 10px;
+  display: inline-block;
+  width: 70vw;
+  margin-top: 4vh;
 }
 .designers{
   width: 143.5px;
@@ -156,7 +167,7 @@ body{
 .profile-container{
   padding: 1em;
   padding-top: 2em;
-  padding-bottom: 7em;
+  padding-bottom: 2em;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-auto-rows: auto;
@@ -166,10 +177,12 @@ body{
   border-radius: 6px;
   cursor: grab;
   transition: 100ms all;
+  transform-origin: 50% 50%;
 }
 .drawing:active{
   cursor: grabbing;
 }
+
 @media only screen and (max-width: 768px) {
   .screen-size{
     height: 100vh; /* Fallback for browsers that do not support Custom Properties */
