@@ -11,7 +11,7 @@ a{
 .profile-item{
   height: 250px;
   position: relative;
-  font-size: 1.6em;
+  font-size: 1.3em;
   word-break: break-all;
   line-height: 0.9em;
   text-transform: uppercase;
@@ -60,7 +60,8 @@ a{
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: black;
-  border-radius: 5px
+  border-radius: 5px;
+
 }
 .profile-item:hover .prfl-item-hover{
   opacity: 1;
