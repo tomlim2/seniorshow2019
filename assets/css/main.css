@@ -10,6 +10,51 @@
   top: 50%;
   margin-top: -28vw;
 }
+.drag-img{
+  position: absolute;
+  top: 50%;
+  margin-top: -28vw;
+  z-index: 2000;
+  pointer-events: none;
+  filter: drop-shadow(.1em .1em .05em rgba(0,0,0,.8));
+  transform-origin: 50% 50%;
+}
+.dragmv{
+  animation: dragprss 4000ms forwards;
+}
+@keyframes dragprss {
+  0%{
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  15%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  20%{
+    opacity: 1;
+  }
+  30%{
+    opacity: 0;
+  }
+  40%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  60%{
+    opacity: 1;
+  }
+  85%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(50px);
+    opacity: 0;
+  }
+}
 
 body{
   margin: 0;
