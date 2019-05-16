@@ -14,7 +14,7 @@
   position: absolute;
   top: 50%;
   margin-top: -28vw;
-  z-index: 2000;
+  z-index: 40;
   pointer-events: none;
   filter: drop-shadow(.1em .1em .05em rgba(0,0,0,.8));
   transform-origin: 50% 50%;
@@ -87,6 +87,7 @@ body{
   left: 10vw;
   top: 94px;
   display: none;
+  z-index: 50;
 }
 .info-container{
   font-size: 2em;
@@ -200,14 +201,14 @@ body{
   width: 40px;
   height: 100vh;
   writing-mode: vertical-rl;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .when{
   right: 10px;
   width: 40px;
   height: 100vh;
   writing-mode: vertical-rl;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .container{
   position: absolute;
@@ -281,17 +282,11 @@ body{
     opacity: 0;
   }
   .drag-img{
-    position: absolute;
     width: 160vw;
     left: 50%;
     top: 50%;
     margin-left: -80vw;
-    margin-top: -48vw;
-    z-index: 2000;
-    pointer-events: none;
-    filter: drop-shadow(.1em .1em .05em rgba(0,0,0,.8));
-    transform-origin: 50% 50%;
-    opacity: 0;
+    margin-top: -18vw;
   }
 }
 @media only screen and (min-width: 1290px) {
