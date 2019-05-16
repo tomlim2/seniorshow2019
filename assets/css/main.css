@@ -18,9 +18,11 @@
   pointer-events: none;
   filter: drop-shadow(.1em .1em .05em rgba(0,0,0,.8));
   transform-origin: 50% 50%;
+  opacity: 0;
 }
 .dragmv{
-  animation: dragprss 4000ms forwards;
+  animation: dragprss 5000ms forwards;
+  animation-delay: 900ms
 }
 @keyframes dragprss {
   0%{
