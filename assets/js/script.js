@@ -23,8 +23,20 @@ $(document).ready(function(){
   } else {
     var picNumbers = 22;
   }
+  var randomNUM = Math.floor(Math.random() * 4);
+  console.log(randomNUM)
+  if(randomNUM === 0){
+    var rotateNUM = 0;
+  }
+  if(randomNUM === 3 ){
+    var rotateNUM = 90;
+  }
+
   for (var i = 0; i < picNumbers; i++) {
-    var randomRotate = Math.random()*360;
+    if(randomNUM === 1 || randomNUM === 2 ){
+      var rotateNUM = Math.random()*180;
+    }
+    var randomRotate = rotateNUM;
     var randomLeft = Math.random()*(window.innerWidth-160);
     var randomTop = Math.random()*(window.innerHeight-60);
     // var getRandomPNG = "assets/img/pics/Pattern11.png"
