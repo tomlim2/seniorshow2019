@@ -21,7 +21,7 @@ $(document).ready(function(){
   if (window.innerWidth<768) {
     var picNumbers = 11;
   } else {
-    var picNumbers = 32;
+    var picNumbers = 22;
   }
   for (var i = 0; i < picNumbers; i++) {
     var randomRotate = Math.random()*360;

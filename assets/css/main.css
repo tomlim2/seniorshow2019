@@ -86,7 +86,7 @@ body{
   margin-left: -71.75px;
 }
 #seniorshow, #designers{
-  filter: drop-shadow(.1em .1em 0em rgba(0,0,0,.8));
+  filter: drop-shadow(.1em .1em .05em rgba(0,0,0,.8));
   cursor: pointer;
 }
 #seniorshow:hover, #designers:hover{
