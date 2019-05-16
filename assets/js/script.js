@@ -11,13 +11,10 @@ $(document).ready(function(){
   };
   var getRandomPNG = function(){
     var pngBase = "assets/img/pics/"
-    var pngs = ["Pattern1","Pattern2","Pattern3","Pattern4","Pattern5","Pattern6","Pattern7","Pattern8","Pattern9","Pattern10","Pattern11","Pattern12",
-    			"Pattern13","Pattern14","Pattern15","Pattern16","Pattern17","Pattern18","Pattern19","Pattern20","Pattern21",
-    			"Pattern22","Pattern23","Pattern24","Pattern25","Pattern26","Pattern27","Pattern28","Pattern29","Pattern30",
-    			"Pattern31","Pattern32","Pattern33","Pattern34","Pattern35","Pattern36","Pattern37","Pattern38","Pattern30",
-    			"Pattern40","Pattern41","Pattern42","Pattern43","Pattern44","Pattern45","Pattern46","Pattern47","Pattern48",
-    			"Pattern49","Pattern50","Pattern51","Pattern52","Pattern53","Pattern54","Pattern55","Pattern56","Pattern57","Pattern58",
-    			"Pattern59","Pattern60","Pattern61","Pattern62","Pattern63","Pattern64"];
+    var pngs = [];
+    for (var i = 1; i < 65; i++) {
+      pngs.push("Pattern" + i);
+    }
     var randomPNG = Math.floor(Math.random() * 64);
     return pngBase + pngs[randomPNG] + ".png";
   };
