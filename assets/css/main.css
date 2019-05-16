@@ -35,6 +35,7 @@ body{
   height: 78vh;
   position: absolute;
   overflow: scroll;
+  -webkit-overflow-scrolling: touch;
   border-radius: 10px;
   left: 10vw;
   top: 94px;
