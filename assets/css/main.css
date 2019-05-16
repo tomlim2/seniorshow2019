@@ -125,18 +125,7 @@ body{
   width: 35px;
   height: 35px;
 }
-.instagram{
-  text-align: center;
-}
-.instagram a{
-  color: #000000;
-  cursor:pointer;
-}
-.instagram img{
-  color: #000000;
-  cursor:pointer;
-  width: 2em;
-}
+
 .title-img img{
   border-radius: 10px;
   display: inline-block;
@@ -277,6 +266,10 @@ body{
     width: 100vw;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
+  }
+  .instagram2{
+    top: 92.5vh;
+    top: calc(var(--vh, 1vh) * 92.5);
   }
   .designers{
     top: 92vh;
